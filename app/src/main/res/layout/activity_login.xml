@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ajay.keychainaccess.LoginActivity">
+
+    <EditText
+        android:id="@+id/userEmail_phone_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textSize="25sp"
+        android:background="@drawable/rounded_edit_text"
+        android:hint="Enter Email/Mobile"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/userPassword_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textSize="25sp"
+        android:background="@drawable/rounded_edit_text"
+        android:hint="Enter Password"
+        android:inputType="textWebPassword"
+        android:layout_below="@id/userEmail_phone_et"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/userLogin_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userPassword_et"
+        android:background="@drawable/rounded_button"
+        android:text="Login"
+        android:textColor="@color/registerLoginTextColor"
+        android:textSize="25sp"
+        android:layout_margin="5dp"/>
+
+    <TextView
+        android:id="@+id/forgetPassword_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userLogin_btn"
+        android:layout_margin="10dp"
+        android:text="Forgot Password?"
+        android:textSize="25dp"
+        android:textColor="@color/colorPrimary"/>
+</RelativeLayout>

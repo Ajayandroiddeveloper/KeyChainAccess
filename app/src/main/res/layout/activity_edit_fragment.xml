@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_edit_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ajay.fragments.EditFragmentActivity">
+
+    <EditText
+        android:id="@+id/nameFragment_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:textSize="25sp"
+        android:layout_margin="10dp"
+        android:background="@drawable/rounded_edit_text"/>
+
+    <EditText
+        android:id="@+id/descriptionFragment_et"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:hint="Description"
+        android:gravity="start"
+        android:textSize="25sp"
+        android:layout_margin="10dp"
+        android:layout_below="@id/nameFragment_et"
+        android:background="@drawable/rounded_edit_text"/>
+
+    <Button
+        android:id="@+id/updateFragment_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_button"
+        android:layout_below="@id/descriptionFragment_et"
+        android:layout_margin="10dp"
+        android:text="Update"
+        android:textColor="@color/registerLoginTextColor"
+        android:textSize="25sp"/>
+</LinearLayout>
